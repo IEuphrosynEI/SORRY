@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Touch the LOVE</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="circle" onclick="goToSorryPage()">
+      <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+        <path d="M12 21s-8-4.35-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.65-8 11-8 11z"
+              stroke="#e74c3c" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+    <p>Touch this if you’re still there…</p>
+  </div>
+
+  <script>
+    function goToSorryPage() {
+      window.location.href = "sorry.html"; // updated target
+    }
+  </script>
+</body>
+</html>

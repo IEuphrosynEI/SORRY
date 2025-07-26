@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Read This...</title>
+  <link rel="stylesheet" href="apology.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <p id="typing-text"></p>
+  </div>
+
+  <script>
+    const text = "Huhu sorry pooo 😔 if I made you feel na parang may pressure or need ka mag-explain sakin. Di ko po sinasadya 🥺 makulit lang talaga ako minsan — kasi namimiss din kita, kahit di ko agad aminin hehe 🙈💖 I really didn’t mean to cross any line. Super thankful ako na honest ka, and I respect you so much for that. Promise, I’ll be more mindful next time. I just care about you… sobra. 🫶Hmmm muahh";
+    const typingElement = document.getElementById("typing-text");
+
+    let index = 0;
+    function typeNextChar() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeNextChar, 50); // adjust speed here
+      }
+    }
+
+    window.onload = typeNextChar;
+  </script>
+</body>
+</html>

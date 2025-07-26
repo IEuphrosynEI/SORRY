@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  flex-direction: column;
+  color: #fff;
+}
+
+.wrapper {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.panda-circle {
+  background-color: #222;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.panda-circle:hover {
+  transform: scale(1.05);
+}
+
+.panda-circle img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffcad4;
+}
+
+.next {
+  font-size: 1.5rem;
+  color: #ffb6c1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.next:hover {
+  color: #fff;
+  transform: scale(1.2);
+  text-shadow: 0 0 8px #ffb6c1;
+}
+
+/* 🌟 Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
